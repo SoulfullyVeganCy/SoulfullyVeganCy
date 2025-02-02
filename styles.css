@@ -244,3 +244,102 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
+/* Search Bar Styling */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the search bar */
+.search-container input {
+    width: 80%; /* Default width for mobile screens */
+    max-width: 500px; /* Max width on larger screens */
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #4CAF50; /* Border color (can be changed) */
+    border-radius: 25px;
+    outline: none; /* Remove the outline */
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Focus styling - no green outline, just a simple border change */
+.search-container input:focus {
+    border-color: #333; /* You can change the color here if needed */
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .search-container input {
+        width: 90%; /* Adjusts to 90% width on smaller screens */
+    }
+}
+
+/* General Menu Styling */
+.menu {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+/* Style for Each Menu Item */
+.menu-item {
+	text-align: center;
+}
+
+/* Ensuring the images don't change size */
+.menu-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	transition: opacity 0.3s;
+}
+
+/* Styling for the Recipe Name */
+.recipe-name {
+	font-size: 1.2rem;
+	color: #333;
+	margin-top: 10px;
+}
+
+/* Hover effect for the image (opacity change, no size change) */
+.menu-item:hover img {
+	opacity: 0.8;
+}
+
+/* Search Bar Styling */
+.search-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.search-container input {
+	width: 50%;
+	padding: 10px;
+	font-size: 16px;
+	border: 2px solid #EF6B88;
+	border-radius: 25px;
+	outline: none;
+	transition: 0.3s ease-in-out;
+}
+
+.search-container input:focus {
+	border-color: #EF6B88;
+}
+
+/* Optional styling for recipe names on hover */
+.menu-item:hover .recipe-name {
+	color: #EF6B88;
+}
+
+/* Remove underlines from the recipe links */
+.menu-item a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* You can change this to match the color scheme of your site */
+}
+
+.menu-item a:hover {
+    text-decoration: none; /* Ensures the hover effect also doesn't underline the text */
+    color: #6F1D1B; /* Change hover color as needed */
+}
