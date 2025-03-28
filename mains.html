@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/logo.png">
+    <meta charset="utf-8">
+    <title>Savoury</title>
+</head>
+
+<body>
+    <header>
+        <h1><span id="green">Soulfully</span> <span>Vegan</span></h1><!--sticked to a fixed colour palette for continuity and aesthetics  -->
+        <nav class="header-menu">
+            <ul> <!--ul used-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="mains.html">Mains</a></li>
+                <li><a href="desserts.html">Desserts</a></li>
+            </ul>
+        </nav>
+
+        <!-- Search Bar -->
+			<div class="search-container">
+				<input type="text" id="search" placeholder="Search recipes..." name="search" oninput="searchRecipes()">
+			</div>
+    </header>
+
+    <div class="menu"> <!--A list of delicious vegan recipes-->
+        <!-- Added recipe name below each image -->
+        <div class="menu-item">
+            <a href="Vegan Lasagna.html">
+                <img src="Images/Vegan Lasagna.jpg" alt="Vegan Lasagna" title="Vegan Lasagna">
+                <div class="recipe-name">Vegan Lasagna</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Vegan Broccoli au Gratin.html">
+                <img src="Images/Vegan Broccoli au Gratin.jpg" alt="Vegan Broccoli au Gratin" title="Vegan Broccoli au Gratin">
+                <div class="recipe-name">Vegan Broccoli au Gratin</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Almond Pulp Cheez.html">
+                <img src="Images/Almond Pulp Cheez.jpg" alt="Almond Pulp Cheez" title="Almond Pulp Cheez">
+                <div class="recipe-name">Almond Pulp Cheez</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Baked Butter Chickn.html">
+                <img src="Images/Baked Butter Chickn.jpg" alt="Baked Butter “Chickn”" title="Baked Butter “Chickn”">
+                <div class="recipe-name">Baked Butter Chickn</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Vegan Irish Stew.html">
+                <img src="Images/Vegan Irish Stew.jpg" alt="Vegan Irish Stew" title="Vegan Irish Stew">
+                <div class="recipe-name">Vegan Irish Stew</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Easy Red Lentil Bread.html">
+                <img src="Images/Easy Red Lentil Bread.jpg" alt="Easy Red Lentil Bread" title="Easy Red Lentil Bread">
+                <div class="recipe-name">Easy Red Lentil Bread</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Red Lentil Soup.html">
+                <img src="Images/Red Lentil Soup.jpg" alt="Red Lentil Soup" title="Red Lentil Soup">
+                <div class="recipe-name">Red Lentil Soup</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Red Pepper Pasta.html">
+                <img src="Images/Red Pepper Pasta.jpg" alt="Red Pepper Pasta" title="Red Pepper Pasta">
+                <div class="recipe-name">Red Pepper Pasta</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Buckwheat Flatbreads.html">
+                <img src="Images/Buckwheat Flatbreads.jpg" alt="Buckwheat Flatbreads" title="Buckwheat Flatbreads">
+                <div class="recipe-name">Buckwheat Flatbreads</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Vegan Carbonara.html">
+                <img src="Images/Vegan Carbonara.jpg" alt="Vegan Carbonara" title="Vegan Carbonara">
+                <div class="recipe-name">Vegan Carbonara</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Creamy Mung Bean Curry.html">
+                <img src="Images/Creamy Mung Bean Curry.jpg" alt="Creamy Mung Bean Curry" title="Creamy Mung Bean Curry">
+                <div class="recipe-name">Creamy Mung Bean Curry</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Vegan Chickn Satay Skewers.html">
+                <img src="Images/Vegan Chickn Satay Skewers.jpg" alt="Vegan Chickn Satay Skewers" title="Vegan Chickn Satay Skewers">
+                <div class="recipe-name">Vegan Chickn Satay Skewers</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Cherry Tomato and Spinach Quinoa Pilau.html">
+                <img src="Images/Cherry Tomato and Spinach Quinoa Pilau.jpg" alt="Cherry Tomato and Spinach Quinoa Pilau" title="Cherry Tomato and Spinach Quinoa Pilau">
+                <div class="recipe-name">Cherry Tomato and Spinach Quinoa Pilau</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Vegan Maple Cashew Chickn.html">
+                <img src="Images/Vegan Maple Cashew Chickn.jpg" alt="Vegan Maple Cashew Chickn" title="Vegan Maple Cashew Chickn">
+                <div class="recipe-name">Vegan Maple Cashew Chickn</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Vegan High-Protein Mushroom Soup.html">
+                <img src="Images/Vegan High Protein Mushroom Soup 2.jpg" alt="Vegan High Protein Mushroom Soup" title="Vegan High Protein Mushroom Soup">
+                <div class="recipe-name">Vegan High-Protein Mushroom Soup</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Black-eyed Pea Burgers.html">
+                <img src="Images/Blackeyed Pea Burgers.jpg" alt="Blackeyed Pea Burgers" title="Blackeyed Pea Burgers">
+                <div class="recipe-name">Black-eyed Pea Burgers</div>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="Greek Fava with Caramelized Onions.html">
+                <img src="Images/Greek Fava with Caramelized Onions.jpg" alt="Greek Fava with Caramelized Onions" title="Greek Fava with Caramelized Onions">
+                <div class="recipe-name">Greek Fava with Caramelized Onions</div>
+            </a>
+        </div>
+
+        
+
+        <div class="menu-item">
+            <a href="Greek Style Peas in Tomato Sauce.html">
+                <img src="Images/Greek Style Peas in Tomato Sauce.jpg" alt="Greek Style Peas in Tomato Sauce" title="Greek Style Peas in Tomato Sauce">
+                <div class="recipe-name">Greek Style Peas in Tomato Sauce</div>
+            </a>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="socials"> 
+            <div class="list">
+                <a href="https://www.instagram.com/soulfullyvegancy?igsh=OWpwd2F3bjBrNXh5">
+                    <img id="ig" src="Images/ig.png" alt="SoulfullyVegan's instagram"></a>
+                <a href="https://www.facebook.com/soulfullyvegancy">
+                    <img id="fb" src="Images/fb.png" alt="SoulfullyVegan's FaceBook"></a>
+            </div>
+        </div>
+       
+        <p>&copy; 2025 SoulfullyVeganCy</p>
+    </footer>
+
+    <!-- Search Functionality Script -->
+	<script>
+		function searchRecipes() {
+			let input = document.getElementById('search').value.toLowerCase();
+			let menuItems = document.querySelectorAll('.menu-item');
+
+			menuItems.forEach(item => {
+				let recipeName = item.querySelector('.recipe-name').textContent.toLowerCase();
+				if (recipeName.includes(input)) {
+					item.style.display = 'block';
+				} else {
+					item.style.display = 'none';
+				}
+			});
+		}
+	</script>
+</body>
+</html>

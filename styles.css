@@ -1,0 +1,345 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FBDAE2;
+    color: #333;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+header {
+    background-color: #F6F4F5; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+header h1 {/* Responsive h1 */
+    font-size: 6vw; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #6F1D1B;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ED94A6; 
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+.grid-container {/*responsiveness of the grid*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.grid-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul li {
+        display:block; /* Shows menu items in block for smaller screens */
+        margin: 20px 0; 
+    }
+}
+
+
+span{
+	color:#000;
+}
+
+#green{
+	color: #EF6B88;
+}
+
+
+.about-us{
+	padding:80px 0px;
+}
+
+.container{
+	max-width:1200px;
+	margin:0 auto;
+	padding:0 20px;
+	
+}
+
+.row{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.flex{/*responsiveness*/
+	flex:0 0 0 50px;
+	max-width:50%;
+	padding:0 20px;
+}
+
+.about-us h2{
+	font-size:45px;
+	margin-bottom:20px;
+	
+}
+
+.about-us p{
+	font-size:18px;
+	line-height:1.5;
+	margin-bottom:20px;
+	
+}
+
+.about-us img{/* image responsiveness*/
+	display:block; /* Shows the image in block/ below the text for smaller screens */
+	max-width:100%;
+	height:auto;
+	margin:120px auto;
+}
+
+
+
+
+/* Media Queries */
+@media screen and (max-width:768px){
+	.row{
+		flex-direction:column;
+		
+	}
+	.flex{
+		max-width:100%;
+	
+	}
+	.about-us h2{
+		font-size:30px;
+	}
+	.about-us p{
+		font-size:18px;
+	}
+	.btn{
+		font-size:16px;
+		
+		margin-bottom:30px;
+	}
+}
+
+
+.btn{
+	background:#6F1D1B;
+	color:white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight:bold;
+	padding:12px 30px;
+	border-radius:30px;
+	transition: .2s;
+	display:inline-block;
+}
+
+.btn:hover{
+	background:transparent;
+	border: 2px solid #6F1D1B;
+	cursor: pointer;
+}
+
+h2{
+	color:#6F1D1B;
+}
+
+.socials img{
+	text-align: center;
+	padding-bottom: 10px;
+	display:inline-block;
+	height:auto;
+	max-width: 50px;
+	padding-left: 10px;
+	
+}
+
+.socials #ig:hover{/*interactivity*/
+	opacity:60%;
+		cursor:pointer;
+	transform: scale(1.1);
+}
+
+.socials #fb:hover{/*interactivity*/
+	opacity:60%;
+	cursor:pointer;
+	transform: scale(1.1);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));/* image responsiveness*/
+    gap: 10px;
+    padding: 10px;
+}
+
+.menu-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.1s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.1);
+	opacity:80%;
+	cursor:pointer;
+}
+
+.etc{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+}
+
+footer {
+    background-color: #F6F4F5; 
+    color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Search Bar Styling */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the search bar */
+.search-container input {
+    width: 80%; /* Default width for mobile screens */
+    max-width: 500px; /* Max width on larger screens */
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #4CAF50; /* Border color (can be changed) */
+    border-radius: 25px;
+    outline: none; /* Remove the outline */
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Focus styling - no green outline, just a simple border change */
+.search-container input:focus {
+    border-color: #333; /* You can change the color here if needed */
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .search-container input {
+        width: 90%; /* Adjusts to 90% width on smaller screens */
+    }
+}
+
+/* General Menu Styling */
+.menu {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+/* Style for Each Menu Item */
+.menu-item {
+	text-align: center;
+}
+
+/* Ensuring the images don't change size */
+.menu-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	transition: opacity 0.3s;
+}
+
+/* Styling for the Recipe Name */
+.recipe-name {
+	font-size: 1.2rem;
+	color: #333;
+	margin-top: 10px;
+}
+
+/* Hover effect for the image (opacity change, no size change) */
+.menu-item:hover img {
+	opacity: 0.8;
+}
+
+/* Search Bar Styling */
+.search-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.search-container input {
+	width: 50%;
+	padding: 10px;
+	font-size: 16px;
+	border: 2px solid #EF6B88;
+	border-radius: 25px;
+	outline: none;
+	transition: 0.3s ease-in-out;
+}
+
+.search-container input:focus {
+	border-color: #EF6B88;
+}
+
+/* Optional styling for recipe names on hover */
+.menu-item:hover .recipe-name {
+	color: #EF6B88;
+}
+
+/* Remove underlines from the recipe links */
+.menu-item a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* You can change this to match the color scheme of your site */
+}
+
+.menu-item a:hover {
+    text-decoration: none; /* Ensures the hover effect also doesn't underline the text */
+    color: #6F1D1B; /* Change hover color as needed */
+}

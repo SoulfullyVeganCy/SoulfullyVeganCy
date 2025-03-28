@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="Images/logo.png">
+	<title>Sweet</title>
+</head>
+
+<body>
+	<header>
+		<h1><span id="green">Soulfully</span> <span>Vegan</span></h1>
+			<nav class="header-menu">
+				<ul> <!--ul used-->
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="drinks.html">Drinks</a></li>
+					<li><a href="breakfast.html">Breakfast</a></li>
+					<li><a href="mains.html">Mains</a></li>
+					<li><a href="desserts.html">Desserts</a></li>
+				</ul>
+			</nav>
+
+			<!-- Search Bar -->
+			<div class="search-container">
+				<input type="text" id="search" placeholder="Search recipes..." name="search" oninput="searchRecipes()">
+			</div>
+	</header>
+
+	<div class="menu">
+		<!-- Recipe Items with Names -->
+		<div class="menu-item">
+			<a href="Almond Milk.html">
+				<img src="Images/Almond Milk.jpg" alt="Almond Milk" title="Almond Milk">
+				<p class="recipe-name">Almond Milk</p>
+			</a>
+		</div>
+
+		<div class="menu-item">
+			<a href="High Protein Blueberry Smoothie.html">
+				<img src="Images/High Protein Blueberry Smoothie.jpg" alt="High Protein Blueberry Smoothie" title="High Protein Blueberry Smoothie">
+				<p class="recipe-name">High Protein Blueberry Smoothie</p>
+			</a>
+		</div>
+
+		<div class="menu-item">
+			<a href="High Protein Chocolate Smoothie.html">
+				<img src="Images/High Protein Chocolate Smoothie.jpg" alt="High Protein Chocolate Smoothie" title="High Protein Chocolate Smoothie">
+				<p class="recipe-name">High Protein Chocolate Smoothie</p>
+			</a>
+		</div>
+	</div>
+
+	
+
+	<footer>
+		<div class="socials">
+			<div class="list">
+				<a href="https://www.instagram.com/soulfullyvegancy?igsh=OWpwd2F3bjBrNXh5">
+					<img id="ig" src="Images/ig.png" alt="SoulfullyVegan's instagram">
+				</a>
+				<a href="https://www.facebook.com/soulfullyvegancy">
+					<img id="fb" src="Images/fb.png" alt="SoulfullyVegan's FaceBook">
+				</a>
+			</div>
+		</div>
+		
+		<p>&copy; 2025 SoulfullyVeganCy</p>
+	</footer>
+
+	<!-- Search Functionality Script -->
+	<script>
+		function searchRecipes() {
+			let input = document.getElementById('search').value.toLowerCase();
+			let menuItems = document.querySelectorAll('.menu-item');
+
+			menuItems.forEach(item => {
+				let recipeName = item.querySelector('.recipe-name').textContent.toLowerCase();
+				if (recipeName.includes(input)) {
+					item.style.display = 'block';
+				} else {
+					item.style.display = 'none';
+				}
+			});
+		}
+	</script>
+</body>
+</html>

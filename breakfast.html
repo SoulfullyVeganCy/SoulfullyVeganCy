@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="Images/logo.png">
+	<title>Sweet</title>
+</head>
+
+<body>
+	<header>
+		<h1><span id="green">Soulfully</span> <span>Vegan</span></h1>
+			<nav class="header-menu">
+				<ul> <!--ul used-->
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="drinks.html">Drinks</a></li>
+					<li><a href="breakfast.html">Breakfast</a></li>
+					<li><a href="mains.html">Mains</a></li>
+					<li><a href="desserts.html">Desserts</a></li>
+				</ul>
+			</nav>
+
+			<!-- Search Bar -->
+			<div class="search-container">
+				<input type="text" id="search" placeholder="Search recipes..." name="search" oninput="searchRecipes()">
+			</div>
+	</header>
+
+	<div class="menu">
+		<!-- Recipe Items with Names -->
+		<div class="menu-item">
+			<a href="Scrambled Tofu.html">
+				<img src="Images/Scrambled Tofu.jpg" alt="Scrambled Tofu" title="Scrambled Tofu">
+				<p class="recipe-name">Scrambled Tofu</p>
+			</a>
+		</div>
+
+		<div class="menu-item">
+			<a href="Caramelized Banana Pancakes.html">
+				<img src="Images/Caramelized Banana Pancakes.jpg" alt="Caramelized Banana Pancakes" title="Caramelized Banana Pancakes">
+				<p class="recipe-name">Caramelized Banana Pancakes</p>
+			</a>
+		</div>
+
+
+		<div class="menu-item">
+			<a href="Tofu Pancakes.html">
+				<img src="Images/Tofu Pancakes.png" alt="Tofu Pancakes" title="Tofu Pancakes">
+				<p class="recipe-name">Tofu Pancakes</p>
+			</a>
+		</div>
+
+		
+
+		
+	</div>
+
+	
+
+	<footer>
+		<div class="socials">
+			<div class="list">
+				<a href="https://www.instagram.com/soulfullyvegancy?igsh=OWpwd2F3bjBrNXh5">
+					<img id="ig" src="Images/ig.png" alt="SoulfullyVegan's instagram">
+				</a>
+				<a href="https://www.facebook.com/soulfullyvegancy">
+					<img id="fb" src="Images/fb.png" alt="SoulfullyVegan's FaceBook">
+				</a>
+			</div>
+		</div>
+		
+		<p>&copy; 2025 SoulfullyVeganCy</p>
+	</footer>
+	<!-- Search Functionality Script -->
+	<script>
+		function searchRecipes() {
+			let input = document.getElementById('search').value.toLowerCase();
+			let menuItems = document.querySelectorAll('.menu-item');
+
+			menuItems.forEach(item => {
+				let recipeName = item.querySelector('.recipe-name').textContent.toLowerCase();
+				if (recipeName.includes(input)) {
+					item.style.display = 'block';
+				} else {
+					item.style.display = 'none';
+				}
+			});
+		}
+	</script>
+</body>
+</html>
