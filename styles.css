@@ -343,3 +343,107 @@ footer {
     text-decoration: none; /* Ensures the hover effect also doesn't underline the text */
     color: #6F1D1B; /* Change hover color as needed */
 }
+
+/* === Modern Homepage Styles (Only for index.html) === */
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(to right, #ef6b88, #f9b6c5);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #ef6b88;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #ef6b88;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* HOMEPAGE CARDS */
+.homepage-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: #6F1D1B;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #EF6B88;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.card-link:hover {
+  color: #6F1D1B;
+}

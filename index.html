@@ -1,62 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="google-site-verification" content="fi8WxCfi6DYOYPy4BfwVTdASq9CWr3imYTBkqmhGK44" />
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="icon" href="Images/logo.png">
-	<!--the logo is the website's favicon to appear more professional-->
-<meta charset="utf-8">
-<title>Soulfully Vegan</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soulfully Vegan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Images/logo.png" />
 </head>
-
 <body>
-	<header>
-	<h1><span id="green">Soulfully</span> <span>Vegan</span></h1><!--sticked to a fixed colour palette for continuity and aesthetics  -->
-        <nav class="header-menu">
-            <ul> <!--ul used-->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="drinks.html">Drinks</a></li>
-                <li><a href="breakfast.html">Breakfast</a></li>
-                <li><a href="mains.html">Mains</a></li>
-                <li><a href="desserts.html">Desserts</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main> <!--gives the viewer a glimpse/summary of the website's content-->
-        <section class="grid-container">
-            <div class="grid-item">
-                <h2>About me</h2>
-                <p>Welcome to <i>Soulfully Vegan.</i> I’m Helen and I’m the face behind this website. Whether you are vegan or not, there are plenty of things you can check out in here. <br></p>
-                <a href="about.html"><img src="Images/momm.jpg" alt="The face behind this website" class="grid-image">
-            </a></div>
-            <div class="grid-item">
-                <h2>Mains</h2>
-                <p>My main goal with this website is to educate about a vegan lifestyle that aligns with your ethics and benefits your own health and the environment.<br> </p>
-                <a href="mains.html"><img src="Images/Vegan Lasagna.jpg" alt="the best lasagna ever" class="grid-image">
-            </a></div>
-            <div class="grid-item">
-                <h2>Desserts</h2>
-                <p>Sharing my recipes is a way to spread the vegan message and inspire people from all around the world.<br> Let's get cooking!<br></p>
-                <a href="desserts.html"><img src="Images/High Protein Vegan Cheesecake.jpg" alt="the best cheesecake ever" class="grid-image">
-            </a></div>
-        </section>
-        
-        
-     </main>
-     
-	<footer><div class="socials"> 
-		<div class="list">
-		<a href="https://www.instagram.com/soulfullyvegancy?igsh=OWpwd2F3bjBrNXh5">
-	<img id="ig" src="Images/ig.png" alt="SoulfullyVegan's instagram"></a>
-		<a href="https://www.facebook.com/soulfullyvegancy">
-		<img id="fb" src="Images/fb.png" alt="SoulfullyVegan's FaceBook"></a>
-	</div>
-	</div>
-        <p>&copy; 2025 SoulfullyVeganCy</p>
-    </footer>
+
+  <header class="site-header">
+    <div class="logo-title">
+      <h1><span id="green">Soulfully</span> <span>Vegan</span></h1>
+    </div>
+    <nav class="header-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="breakfast.html">Breakfast</a></li>
+        <li><a href="mains.html">Mains</a></li>
+        <li><a href="desserts.html">Desserts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Soulfully Vegan</h2>
+      <p>Delicious, ethical, and nourishing vegan meals that feed your soul and body.</p>
+      <a href="about.html" class="cta-button">Learn More</a>
+    </div>
+  </section>
+
+  <main class="homepage-sections">
+    <div class="card">
+      <img src="Images/momm.jpg" alt="Helen, creator of Soulfully Vegan" />
+      <div class="card-content">
+        <h3>About Me</h3>
+        <p>Hi, I’m Helen! Whether you're vegan or just curious, you're welcome to explore a lifestyle that’s good for you and the planet.</p>
+        <a href="about.html" class="card-link">Read More</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/Vegan Lasagna.jpg" alt="Vegan Lasagna" />
+      <div class="card-content">
+        <h3>Mains</h3>
+        <p>Explore hearty, comforting vegan mains that align with your health and values.</p>
+        <a href="mains.html" class="card-link">Explore Mains</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/High Protein Vegan Cheesecake.jpg" alt="Vegan Cheesecake" />
+      <div class="card-content">
+        <h3>Desserts</h3>
+        <p>Indulge in guilt-free desserts that are as kind as they are tasty. Let’s get cooking!</p>
+        <a href="desserts.html" class="card-link">View Desserts</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="socials">
+      <a href="https://www.instagram.com/soulfullyvegancy?igsh=OWpwd2F3bjBrNXh5">
+        <img src="Images/ig.png" alt="Instagram" />
+      </a>
+      <a href="https://www.facebook.com/soulfullyvegancy">
+        <img src="Images/fb.png" alt="Facebook" />
+      </a>
+    </div>
+    <p>&copy; 2025 SoulfullyVeganCy</p>
+  </footer>
+
 </body>
 </html>
