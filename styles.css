@@ -306,6 +306,7 @@ footer {
 /* Hover effect for the image (opacity change, no size change) */
 .menu-item:hover img {
 	opacity: 0.8;
+  
 }
 
 /* Search Bar Styling */
@@ -348,7 +349,11 @@ footer {
 
 /* HERO SECTION */
 .hero {
-  background: linear-gradient(to right, #ef6b88, #f9b6c5);
+  background-image: url('Images/hero.png');
+  background-size: cover;        /* Fill the section */
+  background-position: center;   /* Keep image centered */
+  background-repeat: no-repeat;  /* No tiling */
+
   color: white;
   padding: 100px 20px;
   text-align: center;
@@ -365,13 +370,13 @@ footer {
 .hero-content h2 {
   font-size: 2.8rem;
   margin-bottom: 20px;
-  color: white;
+  color: #ef6b88;
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  color: #fff;
+  color: #6F1D1B;
 }
 
 .cta-button {
@@ -447,3 +452,4 @@ footer {
 .card-link:hover {
   color: #6F1D1B;
 }
+
