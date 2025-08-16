@@ -5,8 +5,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FBDAE2;
-    color: #333;
+    background-color: #1f2b21;
+    color: #fff;
 }
 
 *{
@@ -163,7 +163,7 @@ span{
 
 
 .btn{
-	background:#6F1D1B;
+	background:#ffbbdc;
 	color:white;
 	text-decoration: none;
 	border: 2px solid transparent;
@@ -176,12 +176,12 @@ span{
 
 .btn:hover{
 	background:transparent;
-	border: 2px solid #6F1D1B;
+	border: 2px solid #ffbbdc;
 	cursor: pointer;
 }
 
 h2{
-	color:#6F1D1B;
+	color:#ffbbdc;
 }
 
 .socials img{
@@ -453,3 +453,95 @@ footer {
   color: #6F1D1B;
 }
 
+/* Modern Search Bar */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-container input {
+    width: 80%;
+    max-width: 500px;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-container input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.search-container input:focus {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+.search-container button {
+    position: relative;
+    right: 40px;
+    border: none;
+    background: #EF6B88;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.search-container button:hover {
+    background: #6F1D1B;
+}
+
+.menu-item {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.4s ease, opacity 0.4s ease, filter 0.4s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px); /* slight lift */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15); /* soft shadow */
+}
+
+.menu-item:hover img {
+    transform: scale(1.05); /* gentle zoom */
+    opacity: 0.95;          /* subtle fade */
+    filter: brightness(1.05); /* slightly brighter for a modern feel */
+    cursor: pointer;
+}
+
+/* Header styling */
+header h1 {
+    display: block; /* show the header text again */
+    color: #EF6B88; /* or any accent color you like */
+    font-size: 3rem; /* adjust as needed */
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Recipe titles */
+.recipe-name {
+    font-size: 1.2rem;
+    color: #ffffff; /* white for visibility on dark bg */
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover .recipe-name {
+    color: #EF6B88; /* optional hover accent */
+}
