@@ -13,17 +13,33 @@ body {
 	box-sizing: border-box;
 }
 
+
+header { background-color: #1f2b21; color: #fff; padding: 20px; text-align: center; } 
+
+header h1 {/* Responsive h1 */ font-size: 6vw; }
+
+/* Add a logo above the menu inside the header */
 header {
-    background-color: #F6F4F5; 
-    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    text-align: center;
+    background-color: #1f2b21;
 }
 
-
-header h1 {/* Responsive h1 */
-    font-size: 6vw; 
+/* Logo styling */
+header::before {
+    content: "";
+    display: block;
+    width: 500px;      /* bigger width */
+    height: 250px;     /* bigger height */
+    background-image: url('Images/favicon.png'); /* replace with your logo path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0px; /* spacing between logo and header text/menu */
 }
+
 
 nav ul {
     list-style-type: none;
@@ -38,7 +54,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #6F1D1B;
+    color: #fff;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
@@ -85,11 +101,11 @@ main {
 
 
 span{
-	color:#000;
+	color:#fff;
 }
 
 #green{
-	color: #EF6B88;
+	color: #fff;
 }
 
 
@@ -239,7 +255,7 @@ h2{
 }
 
 footer {
-    background-color: #F6F4F5; 
+    background-color: #1f2b21; 
     color: #000;
     padding: 20px 0;
     text-align: center;
